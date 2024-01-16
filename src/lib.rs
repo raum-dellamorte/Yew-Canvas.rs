@@ -128,7 +128,7 @@ pub trait WithRander: Clone + PartialEq {
 }
 
 #[derive(Properties, Clone, PartialEq)]
-pub struct Props<T: PartialEq + Clone> {
+pub struct Props<T: PartialEq> {
     pub rander: Box<T>,
     pub children: Children,
     pub style: Option<String>,
